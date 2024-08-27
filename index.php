@@ -18,7 +18,7 @@ $data_arr = [
         'changefreq' => 'daily'
     ]
 ];
-$file_type = 'xml';
+$file_type = 'json';
 
-$sitemap = new Sitemap($$data_arr, $file_type);
-$sitemap->save('/var/www/project/public/site-map-gen/');
+$sitemap = new Sitemap($data_arr, $file_type);
+$sitemap->save('');

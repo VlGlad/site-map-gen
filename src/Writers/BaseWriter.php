@@ -7,6 +7,9 @@ use Vlglad\SitemapGen\Interfaces\WriterInterface;
 abstract class BaseWriter implements WriterInterface
 {
     protected function checkDirectory(string $file_path){
+        if ($file_path == ""){
+            return;
+        }
         if (!is_dir($file_path)) {
             mkdir($file_path, 655, true);
         }

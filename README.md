@@ -30,3 +30,5 @@ $file_type = 'xml';
 
 Для создания файла вызываем метод save() с директорией для сохранения файла в качестве параметра
 `$sitemap->save('/var/www/project/public/site-map-gen/');`
+Код с тестовыми данными можно вызвать из консоли, если в папке site-map-gen вызвать файл index.php
+`php index.php`
