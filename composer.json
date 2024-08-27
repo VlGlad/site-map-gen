@@ -1,0 +1,17 @@
+{
+    "name": "vlglad/sitemap-gen",
+    "description": "Package for sitemap generation to xml/csv/json file",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Vlglad\\SitemapGen\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VlGlad"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
