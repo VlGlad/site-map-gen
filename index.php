@@ -3,7 +3,6 @@
 require_once('/var/www/project/public/site-map-gen/vendor/autoload.php');
 
 use Vlglad\SitemapGen\Sitemap;
-use Vlglad\SitemapGen\Writers\CsvFileWriter;
 
 $a = [
     [
@@ -19,7 +18,7 @@ $a = [
         'changefreq' => 'daily'
     ]
 ];
-$cc = new CsvFileWriter;
-$b = 'csv';
+
+$b = 'xml';
 $aa = new Sitemap($a, $b);
-$aa->save('/');
+$aa->save('/var/www/project/public/site-map-gen/');

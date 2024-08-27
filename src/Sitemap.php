@@ -59,7 +59,7 @@ class Sitemap
     }
 
     public function save($file_path){
-        $class_name = ucfirst($this->file_format) . "FileWriter";
+        $class_name = "Vlglad\\SitemapGen\\Writers\\" . ucfirst($this->file_format) . "FileWriter";
         $writer = new $class_name;
         $writer->save($file_path, $this->map_arr);
     }
