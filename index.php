@@ -4,7 +4,7 @@ require_once('/var/www/project/public/site-map-gen/vendor/autoload.php');
 
 use Vlglad\SitemapGen\Sitemap;
 
-$a = [
+$data_arr = [
     [
         'loc' => "https://site.ru/",
         'lastmod' => date("Y-m-d H:i:s"),
@@ -18,7 +18,7 @@ $a = [
         'changefreq' => 'daily'
     ]
 ];
+$file_type = 'xml';
 
-$b = 'xml';
-$aa = new Sitemap($a, $b);
-$aa->save('/var/www/project/public/site-map-gen/');
+$sitemap = new Sitemap($$data_arr, $file_type);
+$sitemap->save('/var/www/project/public/site-map-gen/');
