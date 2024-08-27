@@ -53,7 +53,7 @@ class Sitemap
 
     private function validateFileFormat(string $file_format) {
         if (!is_string($file_format) || !in_array(strtolower($file_format), ['xml', 'csv', 'json'])){
-            throw new \InvalidArgumentException("$file_format should be string 'xml' or 'csv' or 'json'");
+            throw new \InvalidArgumentException('$file_format should be string "xml" or "csv" or "json"');
         }
         return $file_format;
     }
